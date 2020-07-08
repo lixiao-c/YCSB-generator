@@ -1,6 +1,7 @@
 YCBS dataset generator
 ====================================
-Generate YCSB datasets according to different worloads, and output to file
+Generate YCSB datasets according to different worloads, and output to file.
+
 The origin YCSB repository is [https://github.com/brianfrankcooper/YCSB]
 
 Getting Started

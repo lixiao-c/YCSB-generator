@@ -1,4 +1,4 @@
-YCBS dataset generator
+YCSB dataset generator
 ====================================
 Generate YCSB datasets according to different worloads, and output to file.
 
@@ -15,7 +15,7 @@ Getting Started
     make
     ```
     
-2. Write wordload cnofigure file in ./workload . We can set the key distribution, key length in this file. The guidelines can be found in [https://github.com/brianfrankcooper/YCSB/wiki/Implementing-New-Workloads]
+2. Write wordload cnofiguration file in ./workloads . We can set some parameters in this file, including key distribution, key length, and etc. The guidelines can be found in [https://github.com/brianfrankcooper/YCSB/wiki/Implementing-New-Workloads]
 
 3. Generate dataset
 
@@ -38,10 +38,10 @@ YCSB doesn't support change skewness by changing some parameters, the default sk
 
 If you want to generate datasets with different skewness, please modify these files below. You should replace 0.99 in these file with you wanted skewness. 
 
+```
 core/src/main/java/site/ycsb/generator/ZipfianGenerator.java
-
 core/src/main/java/site/ycsb/generator/ScrambledZipfianGenerator.java
-
 core/src/main/java/site/ycsb/workloads/RestWorkload.java
+```
 
 Enjoy!

@@ -40,9 +40,7 @@ Getting Started
 Changing skewness of Zipfian distribution
 --------------------
 
-YCSB doesn't support change skewness by changing some parameters, the default skewness is 0.99.
-
-If you want to generate datasets with different skewness, please modify these files below. You should replace 0.99 in these file with you wanted skewness. 
+The default skewness of YCSB is 0.99. If you want to generate datasets with different skewness, please modify these files below. You should replace 0.99 in these file with you wanted skewness. 
 
 ```
 core/src/main/java/site/ycsb/generator/ZipfianGenerator.java

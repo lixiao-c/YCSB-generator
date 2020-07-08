@@ -30,6 +30,12 @@ Getting Started
     cd YCSB-generator
     ./ycsb.sh <selected_workload> <loadnum> <runnum> <loadfile> <runfile>
     ```
+    The dataset is stored in loadfile and runfile. The format is 
+    ```
+    insert <key>
+    update <key>
+    read <key>
+    ```
 
 Changing skewness of Zipfian distribution
 --------------------

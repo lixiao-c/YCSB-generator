@@ -1,8 +1,7 @@
-https://github.com/brianfrankcooper/YCSB
-
 YCBS dataset generator
 ====================================
-generator datasets according to different worloads, and output to file
+Generate YCSB datasets according to different worloads, and output to file
+The origin YCSB repository is [https://github.com/brianfrankcooper/YCSB]
 
 Getting Started
 ---------------
@@ -36,7 +35,12 @@ Changing skewness of Zipfian distribution
 
 YCSB doesn't support change skewness by changing some parameters, the default skewness is 0.99.
 
-If you want to generate datasets with different skewness, please modify these files below.
+If you want to generate datasets with different skewness, please modify these files below. You should replace 0.99 in these file with you wanted skewness. 
 
+core/src/main/java/site/ycsb/generator/ZipfianGenerator.java
 
+core/src/main/java/site/ycsb/generator/ScrambledZipfianGenerator.java
 
+core/src/main/java/site/ycsb/workloads/RestWorkload.java
+
+Enjoy!
